@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/favicon.PNG" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>WeZuno | Digital Marketing Agency & Growth Expert</title>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0a0a0a',
+            'dark-lighter': '#1a1a1a',
+            'dark-card': '#151515',
+            'purple-deep': '#8a2be2',
+            'purple-light': '#a855f7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'premium-gradient': 'linear-gradient(135deg, #8a2be2 0%, #ff007f 100%)',
+            'card-gradient': 'linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%)',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-white selection:bg-purple-light/30">
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Desktop Header Navbar -->
+  <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl">
+    <!-- Desktop Navbar - Hidden on Mobile -->
+    <div class="hidden md:flex bg-dark-card/80 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 items-center justify-between shadow-2xl relative">
+      <a href="#" id="desktop-logo" class="flex items-center gap-3 group cursor-pointer hover:scale-105 transition-transform">
+        <img src="assets/logo.c22508b622ddd2f1562c.png" alt="WeZuno Logo" class="h-8 object-contain" />
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a href="#about" class="nav-link text-sm font-medium transition-all px-4 py-1.5 rounded-full text-white/70 hover:text-white" data-section="about">About us</a>
+        <a href="#services" class="nav-link text-sm font-medium transition-all px-4 py-1.5 rounded-full text-white/70 hover:text-white" data-section="services">Services</a>
+        <a href="#process" class="nav-link text-sm font-medium transition-all px-4 py-1.5 rounded-full text-white/70 hover:text-white" data-section="process">Process</a>
+        <a href="#pricing" class="nav-link text-sm font-medium transition-all px-4 py-1.5 rounded-full text-white/70 hover:text-white" data-section="pricing">Pricing</a>
+        <a href="#contact" class="nav-link text-sm font-medium transition-all px-4 py-1.5 rounded-full text-white/70 hover:text-white" data-section="contact">Contact us</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="hidden sm:block bg-purple-deep px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-light transition-colors text-center">Book a Call</a>
+      </div>
+    </div>
+
+    <!-- Mobile Header - Logo Only -->
+    <div class="md:hidden flex items-center justify-center w-full">
+      <div class="bg-dark-card/80 backdrop-blur-md border border-white/10 rounded-full px-5 py-2 shadow-2xl flex items-center">
+        <img src="assets/logo.c22508b622ddd2f1562c.png" alt="WeZuno Logo" class="h-7 object-contain" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrap -->
+  <main class="relative">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-36 md:pt-40 pb-20 px-6 flex flex-col items-center text-center overflow-hidden">
+      <!-- Background glow effects -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-deep/20 blur-[120px] rounded-full -z-10 animate-pulse"></div>
+
+      <div class="inline-block px-4 py-1.5 mb-8 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
+        <span class="text-xs font-semibold tracking-widest uppercase text-white/60">
+          WeZuno starts with Trust. We build both
+        </span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-5xl mb-8 px-4 leading-[1.1]">
+        Designing <span class="gradient-text font-extrabold">Authority-Driven Brands</span> For Leaders Who Aim Higher
+      </h1>
+
+      <p class="text-sm md:text-lg text-white/60 max-w-5xl mb-12 px-6">
+        <span class="md:whitespace-nowrap">“We Zuno”, Where Brands Become Movements. We don’t just manage social media – we engineer growth Strategy. Content.</span><br />
+        <span class="md:whitespace-nowrap">Community. Scale. From zero to WeZuno, we take you there. All you need is vision. We’ll handle the rest.</span>
+      </p>
+
+      <a href="#contact" class="premium-button flex items-center gap-2 group text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-purple-deep/20">
+        Book a 20-Min Growth Call
+        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+      </a>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 px-6 max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="inline-block px-4 py-1.5 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm text-xs font-semibold tracking-widest uppercase text-white/60">
+          Our Stats
+        </span>
+        <h2 class="text-4xl md:text-6xl font-bold">
+          Key <span class="gradient-text">Metrics</span>
+        </h2>
+      </div>
+
+      <div class="bg-dark-card border border-white/10 rounded-[40px] p-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-12 text-center relative overflow-hidden">
+        <!-- Subtle background glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/5 blur-[100px] pointer-events-none"></div>
+        
+        <!-- Active Clients -->
+        <div class="flex-1 relative stat-card" data-target="16" data-suffix="+">
+          <div class="text-6xl md:text-8xl font-bold gradient-text mb-4">
+            <span class="stat-number">0</span>+
+          </div>
+          <p class="text-sm md:text-base text-white/40 uppercase tracking-widest font-medium">
+            Active Clients
+          </p>
+          <div class="hidden md:block absolute top-1/2 -right-6 -translate-y-1/2 w-px h-24 bg-white/10"></div>
+        </div>
+
+        <!-- Years in the game -->
+        <div class="flex-1 relative stat-card" data-target="3" data-suffix="+">
+          <div class="text-6xl md:text-8xl font-bold gradient-text mb-4">
+            <span class="stat-number">0</span>+
+          </div>
+          <p class="text-sm md:text-base text-white/40 uppercase tracking-widest font-medium">
+            Years in the game
+          </p>
+          <div class="hidden md:block absolute top-1/2 -right-6 -translate-y-1/2 w-px h-24 bg-white/10"></div>
+        </div>
+
+        <!-- Client Retention Rate -->
+        <div class="flex-1 relative stat-card" data-target="86" data-suffix="%">
+          <div class="text-6xl md:text-8xl font-bold gradient-text mb-4">
+            <span class="stat-number">0</span>%
+          </div>
+          <p class="text-sm md:text-base text-white/40 uppercase tracking-widest font-medium">
+            Client Retention Rate
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-dark text-white scroll-mt-24">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
+          <div>
+            <span class="text-purple-light font-bold tracking-widest uppercase text-xs">Our Story</span>
+            <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8">Why we are WeZuno in Personal Branding</h2>
+            <div class="space-y-6 text-white/70 text-lg leading-relaxed">
+              <p>
+                At We Zuno, we’re a team of creators, strategists, and storytellers driven by one mission — to craft social media experiences that truly connect brands with people.
+              </p>
+              <p>
+                Born from a vision to bridge creativity and marketing, we help businesses grow through impactful content, stronger visibility, and strategies that turn followers into loyal customers. With roots in short films and digital content creation, we bring cinematic storytelling and high-production value into social media marketing — ensuring your brand isn’t just seen, but remembered.
+              </p>
+              <p>
+                We believe in the balance of data and creativity, with results at the center of everything we do. Whether you’re an emerging brand or an ambitious business ready to scale, our goal is simple: make you stand out, grow faster, and own your space online.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Founder 1 -->
+            <div class="flex flex-col gap-6 group mt-4">
+              <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden bg-white/5 shadow-xl">
+                <img
+                  src="assets/founder.png"
+                  alt="SRIHARIKARAN"
+                  class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                />
+              </div>
+              <div>
+                <h4 class="text-2xl font-black">SRIHARIKARAN</h4>
+                <p class="text-purple-light font-bold uppercase tracking-widest text-xs mt-1">Founder</p>
+              </div>
+            </div>
+            <!-- Founder 2 -->
+            <div class="flex flex-col gap-6 group mt-4">
+              <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden bg-white/5 shadow-xl">
+                <img
+                  src="assets/founder1.png"
+                  alt="RANJITH KUMAR S"
+                  class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                />
+              </div>
+              <div>
+                <h4 class="text-2xl font-black">RANJITH KUMAR S</h4>
+                <p class="text-purple-light font-bold uppercase tracking-widest text-xs mt-1">FOUNDER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mission Card -->
+          <div class="glass-card p-8 lg:p-10 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center shadow-[0_0_20px_rgba(138,43,226,0.3)]">
+              <i data-lucide="target" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-3xl font-bold mb-4 text-white">Mission</h3>
+            <p class="text-white/60 leading-relaxed text-lg">
+              Our mission at We Zuno is to create a trusted online presence for brands by delivering cinematic, high-impact digital experiences. We combine storytelling, strategy, and engaging content to boost visibility, connect meaningfully with audiences, and drive real growth.
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="glass-card p-8 lg:p-10 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center shadow-[0_0_20px_rgba(138,43,226,0.3)]">
+              <i data-lucide="eye" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-3xl font-bold mb-4 text-white">Vision</h3>
+            <p class="text-white/60 leading-relaxed text-lg">
+              Our vision at We Zuno is to be a trusted leader in social media marketing, known for creativity, consistency, and measurable results. We strive to redefine how brands connect with their audiences by blending cinematic storytelling with strategic execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-20 bg-dark/50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 mb-12">
+        <div class="text-center">
+          <span class="inline-block px-4 py-1.5 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm text-xs font-semibold tracking-widest uppercase text-white/60">
+            Our Clients
+          </span>
+          <h2 class="text-4xl md:text-6xl font-bold">
+            Trusted By <span class="gradient-text">Brands</span>
+          </h2>
+        </div>
+      </div>
+
+      <!-- Infinite Scroller -->
+      <div class="relative flex overflow-hidden w-full">
+        <div class="marquee-track flex gap-8 px-4">
+          <!-- Slide items -->
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <img src="assets/client1.jpg" alt="Client 1" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <img src="assets/client2.jpg" alt="Client 2" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <img src="assets/client3.jpg" alt="Client 3" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <!-- Loop items -->
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <img src="assets/client1.jpg" alt="Client 4" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <img src="assets/client2.jpg" alt="Client 5" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-purple-deep/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              <img src="assets/client3.jpg" alt="Client 6" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          
+          <!-- Duplicate once more for continuous wrap -->
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <img src="assets/client1.jpg" alt="Client 1" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <img src="assets/client2.jpg" alt="Client 2" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <img src="assets/client3.jpg" alt="Client 3" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <img src="assets/client1.jpg" alt="Client 4" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <img src="assets/client2.jpg" alt="Client 5" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-64 md:w-80 group">
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark-card aspect-[4/3] transition-all duration-500 hover:border-white/20">
+              <img src="assets/client3.jpg" alt="Client 6" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="inline-block px-4 py-1.5 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm text-xs font-semibold tracking-widest uppercase text-white/60">
+          Our Portfolio
+        </span>
+        <h2 class="text-4xl md:text-7xl font-bold mb-6 tracking-tight">
+          See What <span class="gradient-text italic opacity-90 font-extrabold">'Premium'</span> Looks Like
+        </h2>
+        <p class="text-white/40 text-sm md:text-base uppercase tracking-widest font-medium mb-12">
+          Explore Work For: Personal Brands | Dentists | Professionals
+        </p>
+
+        <!-- Category Tabs -->
+        <div class="flex justify-center gap-2 p-1 bg-dark-card border border-white/10 rounded-full w-fit mx-auto mb-16 px-2 py-2">
+          <button id="tab-shade" class="px-8 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-premium-gradient text-white shadow-[0_0_20px_rgba(138,43,226,0.3)]">
+            Shade
+          </button>
+          <button id="tab-dentist" class="px-8 py-2.5 rounded-full text-sm font-bold transition-all duration-300 text-white/50 hover:text-white">
+            Dentist
+          </button>
+        </div>
+      </div>
+
+      <!-- Portfolio Video Grid -->
+      <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-center justify-center perspective-1000 min-h-[450px]">
+        <!-- Cards will be injected dynamically via JS -->
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 bg-dark-lighter/30">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-purple-deep font-bold tracking-widest uppercase text-xs">Expertise</span>
+          <h2 class="text-4xl md:text-5xl font-bold mt-4">Our Core Capabilities</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="glass-card p-8 rounded-2xl hover:bg-white/5 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="share-2" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Social Media Marketing</h3>
+            <p class="text-white/60 leading-relaxed">Strategic growth campaigns that build authority and dominate algorithms.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card p-8 rounded-2xl hover:bg-white/5 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="camera" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Content Creation</h3>
+            <p class="text-white/60 leading-relaxed">Cinematic storytelling and scroll-stopping visuals tailored to your unique voice.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card p-8 rounded-2xl hover:bg-white/5 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="trending-up" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Paid Advertising</h3>
+            <p class="text-white/60 leading-relaxed">High-converting ad campaigns optimized to scale reach and maximize ROI.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="glass-card p-8 rounded-2xl hover:bg-white/5 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="video" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Video Editing</h3>
+            <p class="text-white/60 leading-relaxed">Professional editing with dynamic transitions, color correction, and retention-focused pacing.</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="glass-card p-8 rounded-2xl hover:bg-white/5 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="users" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Social Media Management</h3>
+            <p class="text-white/60 leading-relaxed">Complete channel oversight, from scheduling and engagement to community building.</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="glass-card p-8 rounded-2xl hover:bg-white/5 text-left">
+            <div class="w-12 h-12 bg-premium-gradient rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="monitor" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Website Design</h3>
+            <p class="text-white/60 leading-relaxed">High-performance, luxury web experiences optimized for conversion and brand impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-scroll-container">
+      <div class="process-sticky-container">
+        <div class="px-6 mb-8 md:mb-16 max-w-7xl mx-auto w-full text-center">
+          <span class="inline-block px-4 py-1.5 mb-4 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm text-xs font-semibold tracking-widest uppercase text-white/60">
+            Process
+          </span>
+          <h2 class="text-3xl md:text-6xl font-bold leading-tight px-4">
+            The <span class="gradient-text">WeZuno</span> way - Our Full-Stack System
+          </h2>
+        </div>
+
+        <div class="relative w-full">
+          <!-- Horizontal scroll track -->
+          <div id="process-track" class="flex gap-8 md:gap-16 px-6 md:px-20 w-max transition-transform duration-75 ease-out">
+            
+            <!-- Step 1 -->
+            <div class="group flex-shrink-0 w-[85vw] md:w-[650px] h-[450px] bg-dark-card border border-white/10 rounded-[40px] p-8 md:p-14 relative overflow-hidden flex flex-col justify-end transition-all duration-500 hover:border-purple-deep/40 shadow-2xl">
+              <div class="absolute top-12 left-12 w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center transition-all group-hover:bg-purple-deep/30 group-hover:scale-110">
+                <i data-lucide="target" class="w-8 h-8 text-purple-light"></i>
+              </div>
+              <div class="relative z-10 text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 group-hover:text-purple-light transition-colors">Strategic Planning</h3>
+                <p class="text-white/60 leading-relaxed text-lg italic max-w-md">
+                  We begin with an in-depth meeting to understand your goals, audience, and tone—then devise a custom growth strategy.
+                </p>
+              </div>
+              <div class="absolute -top-10 -right-10 text-[200px] font-bold text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-all duration-700">1</div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="group flex-shrink-0 w-[85vw] md:w-[650px] h-[450px] bg-dark-card border border-white/10 rounded-[40px] p-8 md:p-14 relative overflow-hidden flex flex-col justify-end transition-all duration-500 hover:border-purple-deep/40 shadow-2xl">
+              <div class="absolute top-12 left-12 w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center transition-all group-hover:bg-purple-deep/30 group-hover:scale-110">
+                <i data-lucide="video" class="w-8 h-8 text-purple-light"></i>
+              </div>
+              <div class="relative z-10 text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 group-hover:text-purple-light transition-colors">Scripting & Filming</h3>
+                <p class="text-white/60 leading-relaxed text-lg italic max-w-md">
+                  We write highly customized, engaging scripts based on proven storytelling frameworks and film your content professionally for a premium presence.
+                </p>
+              </div>
+              <div class="absolute -top-10 -right-10 text-[200px] font-bold text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-all duration-700">2</div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="group flex-shrink-0 w-[85vw] md:w-[650px] h-[450px] bg-dark-card border border-white/10 rounded-[40px] p-8 md:p-14 relative overflow-hidden flex flex-col justify-end transition-all duration-500 hover:border-purple-deep/40 shadow-2xl">
+              <div class="absolute top-12 left-12 w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center transition-all group-hover:bg-purple-deep/30 group-hover:scale-110">
+                <i data-lucide="pen-tool" class="w-8 h-8 text-purple-light"></i>
+              </div>
+              <div class="relative z-10 text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 group-hover:text-purple-light transition-colors">Premium Editing</h3>
+                <p class="text-white/60 leading-relaxed text-lg italic max-w-md">
+                  We use world-class editing techniques to turn your raw footage into scroll-stopping content that captures and holds attention.
+                </p>
+              </div>
+              <div class="absolute -top-10 -right-10 text-[200px] font-bold text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-all duration-700">3</div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="group flex-shrink-0 w-[85vw] md:w-[650px] h-[450px] bg-dark-card border border-white/10 rounded-[40px] p-8 md:p-14 relative overflow-hidden flex flex-col justify-end transition-all duration-500 hover:border-purple-deep/40 shadow-2xl">
+              <div class="absolute top-12 left-12 w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center transition-all group-hover:bg-purple-deep/30 group-hover:scale-110">
+                <i data-lucide="share-2" class="w-8 h-8 text-purple-light"></i>
+              </div>
+              <div class="relative z-10 text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 group-hover:text-purple-light transition-colors">Distribution</h3>
+                <p class="text-white/60 leading-relaxed text-lg italic max-w-md">
+                  Your content is strategically posted across platforms to reach the right people at the right time for maximum engagement.
+                </p>
+              </div>
+              <div class="absolute -top-10 -right-10 text-[200px] font-bold text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-all duration-700">4</div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="group flex-shrink-0 w-[85vw] md:w-[650px] h-[450px] bg-dark-card border border-white/10 rounded-[40px] p-8 md:p-14 relative overflow-hidden flex flex-col justify-end transition-all duration-500 hover:border-purple-deep/40 shadow-2xl">
+              <div class="absolute top-12 left-12 w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center transition-all group-hover:bg-purple-deep/30 group-hover:scale-110">
+                <i data-lucide="trending-up" class="w-8 h-8 text-purple-light"></i>
+              </div>
+              <div class="relative z-10 text-left">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 group-hover:text-purple-light transition-colors">Analysis & Scale</h3>
+                <p class="text-white/60 leading-relaxed text-lg italic max-w-md">
+                  We track every metric and refine our approach to consistently scale your WeZuno and impact in your niche.
+                </p>
+              </div>
+              <div class="absolute -top-10 -right-10 text-[200px] font-bold text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-all duration-700">5</div>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- Progress indicator at the bottom -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-6">
+          <div class="h-1 w-64 bg-white/10 relative overflow-hidden rounded-full">
+            <div id="process-progress-bar" class="absolute inset-0 bg-premium-gradient origin-left shadow-[0_0_20px_rgba(138,43,226,0.5)] w-0 transition-all duration-75"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="text-[10px] font-bold text-white/30 tracking-[0.3em] uppercase mb-1">Status</span>
+            <span class="text-sm font-black text-white tracking-widest uppercase">
+              Phase <span id="process-phase-num">1</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 px-4 md:px-6 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-purple-deep font-bold tracking-widest uppercase text-xs">Investment Plans</span>
+        <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8">Choose Your Path to Scale</h2>
+        
+        <!-- Category Switcher -->
+        <div class="flex bg-white/5 backdrop-blur-md p-1.5 rounded-2xl w-full sm:w-max mx-auto border border-white/10 shadow-2xl relative">
+          <!-- Sliding pill background -->
+          <div id="pricing-slider" class="absolute top-1.5 bottom-1.5 left-1.5 w-[calc(50%-6px)] bg-premium-gradient rounded-xl shadow-lg transition-all duration-300 -z-10"></div>
+          
+          <button id="price-tab-marketing" class="flex-1 sm:flex-none px-3 sm:px-6 py-3 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-white">
+            <span class="hidden md:inline">Social Media Marketing</span>
+            <span class="md:hidden">Social Media</span>
+          </button>
+          <button id="price-tab-video" class="flex-1 sm:flex-none px-3 sm:px-6 py-3 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-white/40 hover:text-white/60">
+            <span class="hidden md:inline">Video Editing Service</span>
+            <span class="md:hidden">Video Editing</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Plan Cards Grid -->
+      <div id="pricing-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 min-h-[600px]">
+        <!-- Content will be injected dynamically via JS -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 relative overflow-hidden">
+      <!-- Background Glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-deep/10 blur-[120px] rounded-full pointer-events-none"></div>
+      
+      <div class="max-w-4xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+          <span class="text-purple-deep font-bold tracking-widest uppercase text-xs">Get In Touch</span>
+          <h2 class="text-4xl md:text-6xl font-black mt-4 mb-6 tracking-tighter">
+            Ready to <span class="gradient-text font-black">Scale?</span>
+          </h2>
+          <p class="text-white/60 text-lg">
+            Fill out the form below and it will redirect you to WhatsApp to start our conversation.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 md:p-12 rounded-3xl">
+          <form id="whatsapp-form" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2 text-left">
+                <label class="text-[10px] font-bold text-white/30 uppercase tracking-widest ml-1">Full Name</label>
+                <div class="relative">
+                  <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/20"></i>
+                  <input 
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="John Doe"
+                    class="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-purple-deep/50 transition-colors"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2 text-left">
+                <label class="text-[10px] font-bold text-white/30 uppercase tracking-widest ml-1">Phone / Email</label>
+                <div class="relative">
+                  <i data-lucide="phone" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/20"></i>
+                  <input 
+                    type="text"
+                    name="phone"
+                    required
+                    placeholder="+91 ..."
+                    class="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-purple-deep/50 transition-colors"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2 text-left">
+              <label class="text-[10px] font-bold text-white/30 uppercase tracking-widest ml-1">Your Message</label>
+              <div class="relative">
+                <i data-lucide="message-square" class="absolute left-4 top-5 w-5 h-5 text-white/20"></i>
+                <textarea 
+                  name="message"
+                  required
+                  rows="4"
+                  placeholder="Tell us about your brand goals..."
+                  class="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-purple-deep/50 transition-colors resize-none"
+                ></textarea>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-premium-gradient py-5 rounded-full text-white font-black uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(138,43,226,0.3)] flex items-center justify-center gap-3 group transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+            >
+              Send to WhatsApp
+              <i data-lucide="send" class="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Full Width Map Section -->
+      <div class="mt-32 -mx-6 md:-mx-6 lg:w-[100vw] lg:relative lg:left-1/2 lg:-translate-x-1/2">
+        <div class="w-full h-[300px] md:h-[450px] relative">
+          <iframe 
+            src="https://maps.google.com/maps?q=11.0537,77.0155&z=15&output=embed"
+            class="w-full h-full border-0"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Office Location"
+          ></iframe>
+        </div>
+        
+        <div class="flex justify-center mt-8">
+          <a 
+            href="https://maps.app.goo.gl/iiBbqB6gv5RScGBt7" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="bg-premium-gradient text-white font-black py-4 px-10 rounded-full shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:shadow-[0_0_40px_rgba(138,43,226,0.5)] transition-all flex items-center gap-3 hover:-translate-y-1"
+          >
+            <span class="text-xl">📍</span>
+            Get Directions on Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark-card/30 pt-20 pb-28 md:pb-10 px-6 border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 text-left">
+      <!-- Brand Column -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.c22508b622ddd2f1562c.png" alt="WeZuno Logo" class="h-10 object-contain" />
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white">Let’s Grow Your Brand Together</h3>
+          <p class="text-white/40 text-sm leading-relaxed">
+            Your audience is waiting — and we know how to reach them. From crafting scroll-stopping content to building impactful campaigns, we’re here to make your brand impossible to ignore.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Column -->
+      <div class="space-y-6">
+        <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-purple-light">📩 Contact Us</h4>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3 group">
+            <i data-lucide="mail" class="w-5 h-5 text-purple-deep group-hover:scale-110 transition-transform"></i>
+            <a href="mailto:wezunoagency@gmail.com" class="text-white/60 hover:text-white transition-colors text-sm">wezunoagency@gmail.com</a>
+          </li>
+          <li class="flex items-start gap-3 group">
+            <i data-lucide="phone" class="w-5 h-5 text-purple-deep group-hover:scale-110 transition-transform mt-0.5"></i>
+            <div class="flex flex-col gap-1">
+              <a href="tel:+917397596850" class="text-white/60 hover:text-white transition-colors text-sm">7397596850</a>
+              <a href="tel:+918610645268" class="text-white/60 hover:text-white transition-colors text-sm">8610645268</a>
+            </div>
+          </li>
+          <li class="flex items-center gap-3 group">
+            <i data-lucide="globe" class="w-5 h-5 text-purple-deep group-hover:scale-110 transition-transform"></i>
+            <a href="http://www.wezuno.com" class="text-white/60 hover:text-white transition-colors text-sm">www.wezuno.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Office Column -->
+      <div class="space-y-6">
+        <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-purple-light">📍 Office</h4>
+        <div class="flex items-start gap-3 group">
+          <span class="text-xl">📍</span>
+          <p class="text-white/60 text-sm leading-relaxed">
+            WeZuno Agency<br />
+            Coimbatore, Tamil Nadu<br />
+            India
+          </p>
+        </div>
+      </div>
+
+      <!-- Social Column -->
+      <div class="space-y-6">
+        <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-purple-light">📱 Follow Us</h4>
+        <div class="flex gap-4">
+          <a
+            href="https://www.instagram.com/wezunoagency?igsh=MXd2cmtkMHF3MWZjYw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-premium-gradient transition-colors border border-white/10 group hover:-translate-y-1 duration-300"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="w-4 h-4 text-white">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+        <div class="pt-4 mt-4 border-t border-white/5">
+          <p class="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em]">
+            Creative. Strategic. Results-Driven.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-white/20 text-[10px] font-bold tracking-widest uppercase">
+      <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+        <p>© 2025 WeZuno Agency. All rights reserved.</p>
+        <span class="hidden md:inline text-white/10">|</span>
+        <p>
+          Developed by{' '}
+          <a 
+            href="https://www.linkedin.com/in/prithvi-alageshan/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-purple-light hover:text-white transition-colors border-b border-purple-light/30 hover:border-white/50 pb-0.5"
+          >
+            Prithvi Alageshan  
+          </a>
+        </p>
+      </div>
+      <div class="flex gap-8">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom Navbar overlay for Mobile -->
+  <div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-[360px]">
+    <div class="bg-dark-card/90 backdrop-blur-xl border border-white/10 rounded-2xl py-2 px-1 flex justify-around items-center shadow-2xl">
+      <a href="#" class="bottom-nav-link flex flex-col items-center gap-0.5 px-3 py-1 transition-all" data-section="hero">
+        <i data-lucide="home" class="nav-icon w-5 h-5 text-white/30 transition-colors duration-300"></i>
+        <span class="text-[8px] font-bold uppercase tracking-tighter text-white/30 transition-colors duration-300">Home</span>
+      </a>
+      <a href="#about" class="bottom-nav-link flex flex-col items-center gap-0.5 px-3 py-1 transition-all" data-section="about">
+        <i data-lucide="user" class="nav-icon w-5 h-5 text-white/30 transition-colors duration-300"></i>
+        <span class="text-[8px] font-bold uppercase tracking-tighter text-white/30 transition-colors duration-300">About Us</span>
+      </a>
+      <a href="#services" class="bottom-nav-link flex flex-col items-center gap-0.5 px-3 py-1 transition-all" data-section="services">
+        <i data-lucide="zap" class="nav-icon w-5 h-5 text-white/30 transition-colors duration-300"></i>
+        <span class="text-[8px] font-bold uppercase tracking-tighter text-white/30 transition-colors duration-300">Services</span>
+      </a>
+      <a href="#contact" class="bottom-nav-link flex flex-col items-center gap-0.5 px-3 py-1 transition-all" data-section="contact">
+        <i data-lucide="message-square" class="nav-icon w-5 h-5 text-white/30 transition-colors duration-300"></i>
+        <span class="text-[8px] font-bold uppercase tracking-tighter text-white/30 transition-colors duration-300">Contact</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Lucide Script CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom JS link -->
+  <script src="script.js"></script>
+</body>
+</html>
