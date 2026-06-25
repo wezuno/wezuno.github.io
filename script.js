@@ -163,12 +163,12 @@ const init = () => {
 
   // 4. Portfolio Section Code
   const portfolioItems = [
-    { id: 1, category: 'Shade', name: 'Persian', video: 'assets/Shade (1).mp4' },
-    { id: 2, category: 'Shade', name: 'Cinematic Promo', video: 'assets/Shade (2).mp4' },
-    { id: 3, category: 'Shade', name: 'Product Showcase', video: 'assets/Shade (3).mp4' },
-    { id: 4, category: 'Dentist', name: 'Smile Design', video: 'assets/Dentist (1).mp4' },
-    { id: 5, category: 'Dentist', name: 'Perfect Care', video: 'assets/Dentist (2).mp4' },
-    { id: 6, category: 'Dentist', name: 'Expert Clinic', video: 'assets/Dentist (3).mp4' }
+    { id: 1, category: 'Shade', name: 'Persian', video: 'Shade (1).mp4' },
+    { id: 2, category: 'Shade', name: 'Cinematic Promo', video: 'Shade (2).mp4' },
+    { id: 3, category: 'Shade', name: 'Product Showcase', video: 'Shade (3).mp4' },
+    { id: 4, category: 'Dentist', name: 'Smile Design', video: 'Dentist (1).mp4' },
+    { id: 5, category: 'Dentist', name: 'Perfect Care', video: 'Dentist (2).mp4' },
+    { id: 6, category: 'Dentist', name: 'Expert Clinic', video: 'Dentist (3).mp4' }
   ];
 
   let currentPortfolioCategory = 'Shade';
